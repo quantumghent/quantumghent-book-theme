@@ -213,7 +213,7 @@
                     <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
                     <li data-tippy-content="Home"><a href="{{ master_url }}"><i data-feather="home"></i></a></li>
                     <li><a href="{{theme_header_organisation_url}}" title="{{html_title}}">{{theme_header_organisation}}</a></li>
-                    <li><a href="https://github.com/quantumghent" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="{{theme_header_organisation_github}}" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
 
                 <ul class="qe-toolbar__links">
@@ -228,7 +228,7 @@
                     <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
                     <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
                     {%- if notebook_path %}
-                    <li data-tippy-content="Download Notebook"><a href="{{ notebook_path }}" download><i data-feather="download-cloud"></i></a></li>
+                    <li data-tippy-content="Download Notebook"><a href="{{ theme_nb_url }}{{ notebook_path }}" download><i data-feather="download-cloud"></i></a></li>
                     {%- endif %}
                     {%- if theme_nb_repository_url %}
                     <li class="settings-button" id="settingsButton"><div data-tippy-content="Launch Notebook"><i data-feather="play-circle"></i></div></li>
